@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  professional:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        twist: ["risk", "horn", "dusk", "confidence", "discount"]
+        castle: ["demonstrate", "cinema", "tube", "twist"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar HY
